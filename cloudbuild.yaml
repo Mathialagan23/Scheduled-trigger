@@ -1,5 +1,12 @@
 steps:
  - name: 'ubuntu'
-   args: ['echo','Hello boi']
+   args: ['echo','Hello boi 1']
+
+ - name: 'ubuntu'
+   args: ['echo','Hello boi 2']  
+
+ - name: 'ubuntu'
+   args: ['echo','Hello boi 3']    
+
 options:
  logging: CLOUD_LOGGING_ONLY
