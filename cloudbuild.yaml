@@ -6,7 +6,8 @@ steps:
    args: ['echo','Hello boi 2']  
 
  - name: 'ubuntu'
-   args: ['echo','Hello boi 3']    
+   args: ['echo','Hello boi 3']
+   waitFor: ['-'] 
 
 options:
  logging: CLOUD_LOGGING_ONLY
