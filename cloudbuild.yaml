@@ -1,11 +1,11 @@
 steps:
  - name: 'ubuntu'
    args: ['echo','Hello boi 1']
-   waitFor: ['step2']
+   id: 'step2'
 
  - name: 'ubuntu'
    args: ['echo','Hello boi 2']
-   id: 'step2'
+   waitFor: ['step2'] 
 
  - name: 'ubuntu'
    args: ['echo','Hello boi 3']
