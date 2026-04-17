@@ -1,23 +1,12 @@
 steps:
- - name: 'ubuntu'
-   args: ['echo','Hello boi 1']
-   id: 'step1'
+- name: 'ubuntu'
+  args: ['echo','pipeline starts']
 
- - name: 'ubuntu'
-   args: ['echo','Hello boi 2']
-   waitFor: ['step1'] 
+- name: 'ubuntu'
+  args: ['sleep','20s']
 
- - name: 'ubuntu'
-   args: ['echo','Hello boi 3']
-   waitFor: ['step1'] 
-
- - name: 'ubuntu'
-   args: ['echo','Hello boi 4']
-   waitFor: [ ] 
-
- - name: 'ubuntu'
-   args: ['echo','Hello boi 5']
-   waitFor: [ ]     
+- name: 'ubuntu'
+  args: ['echo','pipeline ends']
 
 options:
- logging: CLOUD_LOGGING_ONLY
+ logging: CLOUD_LOGGING_ONLY  
